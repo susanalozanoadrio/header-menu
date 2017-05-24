@@ -1,0 +1,45 @@
+.btnOpenMenu {
+    display: flex;
+    justify-content: center;
+    border:none;
+    width: 4em;
+    background-color:$primaryColor;
+    margin-right: 4em;
+}
+#myMenuMobile {
+  position: absolute;
+  right: 0;
+  display:none;
+  opacity: 1;
+  width: 200px;
+    margin-top: 0;
+    background-color: rgb(107,61,232);
+    background: -webkit-linear-gradient($primaryColor),($secondaryColor);
+    background: -o-linear-gradient(($primaryColor),($secondaryColor));
+    background: -moz-linear-gradient(($primaryColor),($secondaryColor));
+    background: linear-gradient(($primaryColor),($secondaryColor));
+}
+.menuComputer {
+    display: flex;
+    flex-direction: row;
+    padding-right: 4em;
+    list-style: none;
+}
+
+.menuComputer {
+    display: none;
+}
+@media  screen and (min-device-width:800px) {
+
+.btnOpenMenu{
+  display: none;
+}
+#myMenuMobile{
+  opacity: 0;
+}
+.menuComputer{
+  display: flex;
+  flex-direction:row;
+}
+
+}
