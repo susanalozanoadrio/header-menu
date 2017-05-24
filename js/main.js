@@ -1,12 +1,12 @@
-var buttom = document.querySelector(".btnOpenMenu")
+var button = document.querySelector(".btnOpenMenu")
 
 function myToggle() {
 var list = document.getElementById("myMenuMobile");
-    if (list.style.display === 'none') {
-        list.style.display = 'block';
+    if (list.style.display === "none"||list.style.display ==="") {
+        list.style.display = "block";
     } else {
-        list.style.display = 'none';
+        list.style.display = "none";
     }
 
 }
-button.addEvenListener('click',myToggle);
+button.addEventListener("click",myToggle);

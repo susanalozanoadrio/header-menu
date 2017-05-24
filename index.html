@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width", user-scalable=no>
     <title>ejercicio header sass</title>
     <link rel="stylesheet" href="css/index.scss">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700i" rel="stylesheet">
@@ -11,15 +12,21 @@
 
 <body>
     <header>
-        <h1>HEADER</h1>
+        <h1><a href="#">
+          <img src="images/iconSeta.png" class="seta" alt="icono seta">
+          </a>
+        </h1>
+        <h2>Header Sussu Pettalos</h2>
         <div class="headerContent">
-            <button onclick= "myToggle"() class="btnOpenMenu" type="button" name="openMenu">
+            <button class="btnOpenMenu" type="button" name="openMenu">
       <img class="imgMenu" src="images/iconMenu.png" alt="botonMenu">
       </button>
-      <ul class="menuComputer ">
+
+
+      <ul class="menuComputer">
           <li>
-              <a href="# ">
-                  <img src="images/iconMesages.png " alt="mesage ">
+              <a href="#">
+                  <img src="images/iconMesages.png " alt="message ">
                   <span>Messages</span>
               </a>
           </li>
@@ -37,40 +44,40 @@
           </li>
           <li>
               <a href="# ">
-                  <img src="images/iconComents.png " alt="Coment ">
-                  <span>Coments</span>
+                  <img src="images/iconComents.png " alt="Comment ">
+                  <span>Comments</span>
               </a>
           </li>
       </ul>
       </header>
+      <ul id="myMenuMobile" class ="bounceInDown hidden">
+      <li >
+          <a href="# ">
+              <img src="images/iconMesages.png " alt="message ">
+              <span>Messages</span>
+          </a>
+      </li>
+      <li>
+          <a href="# ">
+              <img src="images/iconFavourites.png " alt="star ">
+              <span>Favourites</span>
+          </a>
+      </li>
+      <li>
+          <a href="# ">
+              <img src="images/iconAlerts.png " alt="bell ">
+              <span>Alerts</span>
+          </a>
+      </li>
+      <li>
+          <a href="# ">
+              <img src="images/iconComents.png " alt="Comment ">
+              <span>Comments</span>
+          </a>
+      </li>
+  </ul>
+  </div>
 
-            <ul id="myMenuMobile" class ="bounceInDown">
-            <li >
-                <a href="# ">
-                    <img src="images/iconMesages.png " alt="mesage ">
-                    <span>Messages</span>
-                </a>
-            </li>
-            <li>
-                <a href="# ">
-                    <img src="images/iconFavourites.png " alt="star ">
-                    <span>Favourites</span>
-                </a>
-            </li>
-            <li>
-                <a href="# ">
-                    <img src="images/iconAlerts.png " alt="bell ">
-                    <span>Alerts</span>
-                </a>
-            </li>
-            <li>
-                <a href="# ">
-                    <img src="images/iconComents.png " alt="Coment ">
-                    <span>Coments</span>
-                </a>
-            </li>
-        </ul>
-        </div>
 
 
 <script src="js/main.js " charset="utf-8 "></script>

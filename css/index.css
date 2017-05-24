@@ -2,6 +2,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+body {
+  margin: 0; }
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,6 +16,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   max-width: 100%;
+  min-width: 20%;
   background-color: #c1aae8; }
 
 h1 {
@@ -31,15 +35,20 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   border: none;
-  margin-top: 1em;
   width: 4em;
   background-color: #c1aae8;
   margin-right: 4em; }
 
 #myMenuMobile {
-  /*display:none;*/
-  width: 15%;
-  background-color: #6b3de8; }
+  position: absolute;
+  right: 0;
+  display: none;
+  opacity: 1;
+  width: 200px;
+  margin-top: 0;
+  background-color: #6b3de8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#c1aae8), to(#6b3de8));
+  background: linear-gradient(#c1aae8, #6b3de8); }
 
 @-webkit-keyframes bounceInDown {
   from, 60%, 75%, 90%, to {
@@ -87,11 +96,12 @@ h1 {
 .bounceInDown {
   -webkit-animation-name: bounceInDown;
           animation-name: bounceInDown;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s; }
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s; }
 
 li {
-  list-style: none; }
+  list-style: none;
+  padding-top: 2em; }
 
 a {
   display: -webkit-inline-box;
@@ -123,16 +133,20 @@ img {
 .menuComputer {
   display: none; }
 
-/*@media only screen and (min-device-width:800px) {
+@media screen and (min-device-width: 800px) {
+  .btnOpenMenu {
+    display: none; }
 
-.btnOpenMenu{
-  display: none;
-}
-.menuComputer{
-  display: flex;
-  flex-direction:row;
-}
+  #myMenuMobile {
+    opacity: 0; }
 
-}*/
+  .menuComputer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row; } }
 
 /*# sourceMappingURL=index.css.map */
