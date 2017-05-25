@@ -1,4 +1,4 @@
-var button = document.querySelector(".btnOpenMenu")
+var button = document.querySelector(".btnOpenMenu");
 
 function myToggle() {
   var list = document.getElementById("myMenuMobile");
