@@ -6,7 +6,7 @@
     background-color:$primaryColor;
     margin-right: 4em;
 }
-#myMenuMobile {
+.menu-mobile{
   position: absolute;
   right: 0;
   display:none;
@@ -19,27 +19,23 @@
     background: -moz-linear-gradient(($primaryColor),($secondaryColor));
     background: linear-gradient(($primaryColor),($secondaryColor));
 }
-.menuComputer {
-    display: flex;
-    flex-direction: row;
-    padding-right: 4em;
-    list-style: none;
-}
 
 .menuComputer {
     display: none;
 }
-@media  screen and (min-device-width:800px) {
+@media(min-width:800px) {
 
 .btnOpenMenu{
   display: none;
 }
-#myMenuMobile{
+.menu-mobile{
   opacity: 0;
 }
 .menuComputer{
   display: flex;
   flex-direction:row;
+  padding-right: 4em;
+  list-style: none;
 }
 
 }

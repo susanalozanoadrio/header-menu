@@ -1,21 +1,19 @@
+* {
+    box-sizing: border-box;
+}
+body{
+  margin: 0;
+}
 
 h1 {
     font-family: $font;
     padding-left: 2em;
 }
 
-.imgMenu {
-    width: 4em;
-    height: 4em;
-}
 li {
 list-style: none;
 padding-top: 2em;
-
-
-
 }
-
 
 a {
     display: inline-flex;
@@ -26,7 +24,12 @@ a {
     margin-right: 1em;
 }
 
-img {
-    width: 2em;
-    height: 2em;
+.menuComputer img{
+    width: 3em;
+    height: 3em;
+}
+
+.hamburger {
+    width: 4em;
+    height: 4em;
 }

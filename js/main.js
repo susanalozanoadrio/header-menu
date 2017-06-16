@@ -1,7 +1,7 @@
 var button = document.querySelector(".btnOpenMenu");
 
 function myToggle() {
-  var list = document.getElementById("myMenuMobile");
+  var list = document.querySelector(".menu-mobile");
   if (list.style.display === "none" || list.style.display === "") {
     list.style.display = "block";
   } else {

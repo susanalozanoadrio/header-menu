@@ -5,27 +5,9 @@
 body {
   margin: 0; }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  max-width: 100%;
-  min-width: 20%;
-  background-color: #c1aae8; }
-
 h1 {
   font-family: "Ubuntu", sans-serif;
   padding-left: 2em; }
-
-.imgMenu {
-  width: 4em;
-  height: 4em; }
 
 li {
   list-style: none;
@@ -43,9 +25,27 @@ a {
   color: black;
   margin-right: 1em; }
 
-img {
-  width: 2em;
-  height: 2em; }
+.menuComputer img {
+  width: 3em;
+  height: 3em; }
+
+.hamburger {
+  width: 4em;
+  height: 4em; }
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+  min-width: 20%;
+  background-color: #c1aae8; }
 
 .btnOpenMenu {
   display: -webkit-box;
@@ -59,7 +59,7 @@ img {
   background-color: #c1aae8;
   margin-right: 4em; }
 
-#myMenuMobile {
+.menu-mobile {
   position: absolute;
   right: 0;
   display: none;
@@ -71,24 +71,13 @@ img {
   background: linear-gradient(#c1aae8, #6b3de8); }
 
 .menuComputer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  padding-right: 4em;
-  list-style: none; }
-
-.menuComputer {
   display: none; }
 
-@media screen and (min-device-width: 800px) {
+@media (min-width: 800px) {
   .btnOpenMenu {
     display: none; }
 
-  #myMenuMobile {
+  .menu-mobile {
     opacity: 0; }
 
   .menuComputer {
@@ -98,7 +87,9 @@ img {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
-            flex-direction: row; } }
+            flex-direction: row;
+    padding-right: 4em;
+    list-style: none; } }
 @-webkit-keyframes bounceInDown {
   from, 60%, 75%, 90%, to {
     -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
