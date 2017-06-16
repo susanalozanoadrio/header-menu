@@ -20,6 +20,10 @@
     background: linear-gradient(($primaryColor),($secondaryColor));
 }
 
+.open-menu-mobile{
+  display: block;
+}
+
 .menuComputer {
     display: none;
 }
